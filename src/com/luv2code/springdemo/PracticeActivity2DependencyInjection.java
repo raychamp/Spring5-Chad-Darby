@@ -2,16 +2,15 @@ package com.luv2code.springdemo;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-public class SetterDemoApp {
+public class PracticeActivity2DependencyInjection {
 
 	public static void main(String[] args) {
-		
 		//load spring configuration file
 		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
 		
 		//retrieve bean from spring container
 		// This has the interface and the applicationContext.xml has the implementation
-		CricketCoach theCoach = context.getBean("myCricketCoach", CricketCoach.class);
+		CardioCoach theCoach = context.getBean("myCardioCoach", CardioCoach.class);
 		
 		
 		//call methods on the bean
